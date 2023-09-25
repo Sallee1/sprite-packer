@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2D-bin-packing-algorithm", "2D-bin-packing-algorithm\2D-bin-packing-algorithm.vcxproj", "{C1BAF10A-4C35-4DF9-AB8F-2C276F545028}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "spite_packer", "sprite-packer\2D-bin-packing-algorithm.vcxproj", "{C1BAF10A-4C35-4DF9-AB8F-2C276F545028}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

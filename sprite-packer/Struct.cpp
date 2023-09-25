@@ -2,12 +2,12 @@
 
 Node* CreateNode(int x, int y, int w, int h)
 {
-    // ´´½¨¾ØĞÎ¶ş²æÊ÷½áµã
+    // åˆ›å»ºçŸ©å½¢äºŒå‰æ ‘ç»“ç‚¹
     Node* node = new Node;
     node->used = 0;
     node->down = nullptr;
     node->right = nullptr;
-    node->parent= nullptr;
+    node->parent = nullptr;
     node->x = x;
     node->y = y;
     node->width = w;
@@ -18,7 +18,7 @@ Node* CreateNode(int x, int y, int w, int h)
 
 Block* CreateBlock(int w, int h, int i)
 {
-    // ´´½¨´ı·ÅÖÃµÄ¾ØĞÎ¿é
+    // åˆ›å»ºå¾…æ”¾ç½®çš„çŸ©å½¢å—
     Block* block = new Block;
     block->fit = nullptr;
     block->x = 0;
@@ -26,13 +26,13 @@ Block* CreateBlock(int w, int h, int i)
     block->width = w;
     block->height = h;
     block->id = i;
-    
+
     return block;
 }
 
 void PrintBlocks(vector<vector<int>> bInfo)
 {
-    // ´òÓ¡ËùÓĞµÄ¾ØĞÎ¿é {x, y, id}
+    // æ‰“å°æ‰€æœ‰çš„çŸ©å½¢å— {x, y, id}
     for (int i = 0; i < bInfo.size(); i++)
     {
         cout << bInfo[i][0] << ", " << bInfo[i][1] << ", " << bInfo[i][2] << endl;

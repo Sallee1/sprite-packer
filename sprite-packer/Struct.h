@@ -7,22 +7,22 @@ using namespace std;
 struct Node
 {
     struct Node* parent;
-    struct Node* down;    // down ÊÇ¾ØĞÎµÄÏÂ±ßµÄÇøÓò
-    struct Node* right;   // right ÊÇ¾ØĞÎµÄÓÒ±ßµÄÇøÓò
-    int used;    // ¸Ã¾ØĞÎ¿Õ¼äÊÇ·ñ±»Õ¼ÓÃ
+    struct Node* down;    // down æ˜¯çŸ©å½¢çš„ä¸‹è¾¹çš„åŒºåŸŸ
+    struct Node* right;   // right æ˜¯çŸ©å½¢çš„å³è¾¹çš„åŒºåŸŸ
+    int used;    // è¯¥çŸ©å½¢ç©ºé—´æ˜¯å¦è¢«å ç”¨
     int width;
     int height;
     int x;
     int y;
 };
 
-// ´¦Àí¾ØĞÎ½áµã
+// å¤„ç†çŸ©å½¢ç»“ç‚¹
 Node* CreateNode(int x, int y, int w, int h);
 
-// ´ı·ÅÖÃµÄ¾ØĞÎ¿é
+// å¾…æ”¾ç½®çš„çŸ©å½¢å—
 struct Block
 {
-    struct Node* fit;    // ÊÊºÏ¸Ã¾ØĞÎ¿é·ÅÖÃµÄÎ»ÖÃ£¬ÈôÎª nullptr ±íÊ¾Î»ÖÃ²»¹»
+    struct Node* fit;    // é€‚åˆè¯¥çŸ©å½¢å—æ”¾ç½®çš„ä½ç½®ï¼Œè‹¥ä¸º nullptr è¡¨ç¤ºä½ç½®ä¸å¤Ÿ
     int width;
     int height;
     int x;
@@ -30,6 +30,6 @@ struct Block
     int id;
 };
 
-// ´¦Àí¾ØĞÎ¿é
+// å¤„ç†çŸ©å½¢å—
 Block* CreateBlock(int w, int h, int i);
 void PrintBlocks(vector<vector<int>> bInfo);
